@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Assignment2
 {
@@ -9,9 +11,14 @@ namespace Assignment2
 
         public void Start()
         {
-            //Introduce();
+            Console.WriteLine(); //blankline
+            Console.WriteLine("Hello I'm Slim Shady"); //Greeting message
+            Console.WriteLine(); //blankline
+        }
+            public void ReadName()
+            {
             Console.WriteLine("Let me know about yourself");
-        
+            
             Console.WriteLine("What is your full name? (first and last)");
             name = Console.ReadLine();
 
@@ -21,22 +28,8 @@ namespace Assignment2
 
             Console.WriteLine("Here is your name and email adress:");
             Console.WriteLine(name + email);
+            }
 
-            bool done = false;
-            do
-            {
-                //Call method to read a number 1 to 7 and display the
-                //name of the day (1 = Monday, up to 7 = Sunday) with a comment
-                PredictTheDay();
-
-                //Calculate the length of a given text
-                CalculateStrengthLength
-
-                //Run again or Exit
-                done = RunAgain();
-            } while (!done);
-
-            Console.WriteLine("Welcome back, " + name);
-        }
+        
     }
 }
